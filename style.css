@@ -1,109 +1,71 @@
-h1, h2, h3 {
-    font-family: 'Blueberry';
-    color:black;
-}
-
-h1, h2 {
-    background-image: url(images/giraffe-pattern.avif);
-    background-repeat: cover;
-    color:aliceblue;
-    text-shadow: 3px 2px 4px #000000;
-    margin-inline-start: 15px;
-}
-
-h3 {
-    text-shadow: 3px 2px 4px aliceblue;
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    margin-inline-start: 10px;
-}
-
-body {
-    font-family: 'Creator Credits', Arial, Helvetica, sans-serif;
-    font-size: 150%;
-}
-a {
-    color: brown;
-}
-
-a:hover {
-    color:red
-}
-
-a:visited {
-    color: purple
-}
-
-@font-face {
-    font-family: 'Blueberry';
-    src: url('fonts/Blueberry.ttf');
-}
+/* Fonts */
 @font-face {
     font-family: 'Hip Horay';
     src: url('fonts/hip-horay.otf');
 }
-@font-face {
-    font-family: 'Creator Credits';
-    src: url('fonts/CreatorCreditsBB.ttf');
+
+h1, h2, h3 {
+    font-family: 'Hip Horay';
+}
+
+h2, h3 {
+    font-size: 80%;
+}
+
+/* Colors */
+body h1 {
+    color: white;
 }
 
 .footer {
-    font-size: 1em;
-    color: gray;
+    color: white
 }
 
-#menu td {
-    font-size: 120%;
-    padding: 2px;
-    border-style: solid;
-    border: 5px solid;
-    /* border-image: url("images/rainbow.gif") 100 100 100 100 stretch; */
-    border-radius: 10px;
+.text-brown {
+    color: #8B4513;
+}    
+.text-brown:hover {
+    color: #5D2E0A;
+}
+
+.menu-entry {
+    margin: 0 10px;
+}
+
+.menu-entry a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 #giraffe-gif {
-    position: fixed;
-    right: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-#anakin_skywalker {
-    border: 5px solid #665544;
-    background-color: green;
-    overflow: auto;
-    width: 100%;
+.footer {
+    font-size: 0.9em;
 }
 
-.column1of2, .column2of2{
-    width: 30%;
-    margin: 1;
+/* Article sections */
+article h2 {
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 10px;
+    margin-top: 30px;
 }
 
-.column1of2 {
-    float: left;
+/* Giraffe icon at the top of the page */
+.giraffe-icon {
+    max-width: 150px;
+    height: auto;
 }
 
-.column2of2 {
-    float: right;
-} 
-
-.menu-entry{
-    width: 15%;
-    float: left;
-    font-size: 130%;
-    padding: 2%;
-    border-style: solid;
-    border: 3% solid;
-    border-radius: 10px;
-}
-
-img.align-left {
-    float: left;
-    margin-right: 10px;
-    width: 200px;
-}
-
-img.align-right {
-    float: right;
-    margin-right: 10px;
-    width: 200px;
+/* Making the giraffe thumbnail rounded and add some shadow */
+img.img-fluid.float-end {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 150px;
 }
